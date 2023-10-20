@@ -1,0 +1,8 @@
+/target
+/.idea/
+Cargo.lock
+.env
+/blumer-ms-profile.iml
+/deps/
+/files/
+.github

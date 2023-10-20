@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  profile-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: profile-container
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./files/:/files
+
+networks:
+  default:
+    name: privet-net
+    external: true

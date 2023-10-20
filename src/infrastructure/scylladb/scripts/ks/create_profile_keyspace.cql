@@ -1,0 +1,1 @@
+CREATE KEYSPACE IF NOT EXISTS profile With REPLICATION = {'class': 'SimpleStrategy', 'replication_factor':3}
